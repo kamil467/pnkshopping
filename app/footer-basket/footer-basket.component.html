@@ -1,0 +1,19 @@
+<ion-row>
+  <ng-container *ngIf="basketFooterObj != undefined">
+			<ion-col>
+				
+					{{basketFooterObj.totalItemCount}}
+
+			</ion-col>
+			<ion-col align-self-center text-center (click)="viewBasket('basketFooterObj.storecode')">
+				<ion-icon name="basket"></ion-icon>
+				Basket
+			</ion-col>
+			<ion-col style="text-align: end;">
+	
+					<strong>Rs.{{basketFooterObj.totalBasket}}</strong>
+			
+
+			</ion-col>
+      	</ng-container>
+		</ion-row>
